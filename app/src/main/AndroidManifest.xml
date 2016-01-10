@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ca.sayfe.sayfe">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -8,16 +9,34 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDk11xg3VJ04AsdXdEz0PkqXi7SylT5YYw" />
 
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
+
             <!-- Launch into SplashActivity -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".QuestionListActivity"
+            android:label="@string/title_question_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QuestionDetailActivity"
+            android:label="@string/title_question_detail"
+            android:parentActivityName=".QuestionListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.sayfe.sayfe.QuestionListActivity" />
+        </activity>
+        <activity android:name=".MapActivity"></activity>
     </application>
 
 </manifest>

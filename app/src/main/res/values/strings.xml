@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Sayfe</string>
+    <!-- Main Activity -->
+    <string name="mainActivityTitleText">I    .  .  .</string>
+    <string name="mainActivityFirstButton">have questions</string>
+    <string name="mainActivitySecondButton">feel unsafe</string>
+    <string name="mainActivityThirdButton">need support</string>
+    <string name="title_question_list">Questions</string>
+    <string name="title_question_detail">Question Detail</string>
+
+
 </resources>
