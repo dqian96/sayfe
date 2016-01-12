@@ -16,7 +16,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import ca.sayfe.sayfe.dummy.DummyContent;
+import ca.sayfe.sayfe.QuestionDatabase.QuestionDatabase;
 
 import java.util.List;
 
@@ -68,15 +68,15 @@ public class QuestionListActivity extends AppCompatActivity {
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(DummyContent.ITEMS));
+        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(QuestionDatabase.QUESTIONS));
     }
 
     public class SimpleItemRecyclerViewAdapter
             extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder> {
 
-        private final List<DummyContent.DummyItem> mValues;
+        private final List<QuestionDatabase.Questions> mValues;
 
-        public SimpleItemRecyclerViewAdapter(List<DummyContent.DummyItem> items) {
+        public SimpleItemRecyclerViewAdapter(List<QuestionDatabase.Questions> items) {
             mValues = items;
         }
 
@@ -124,7 +124,7 @@ public class QuestionListActivity extends AppCompatActivity {
             public final View mView;
             public final TextView mIdView;
             public final TextView mContentView;
-            public DummyContent.DummyItem mItem;
+            public QuestionDatabase.Questions mItem;
 
             public ViewHolder(View view) {
                 super(view);
