@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Action Bar colors -->
+    <!-- Sayfe Theme/Action Bar colors -->
     <color name="colorPrimary">#009688</color>
     <color name="colorPrimaryDark">#00695C</color>
     <color name="colorAccent">#80CBC4</color>
-
-    <!-- Sayfe Theme colors -->
-    <color name="darkGreySayfeTheme">#36414d</color>
-    <color name="tealSayfeTheme">#0d9591</color>
 
     <!-- Custom color definitions -->
     <item name="blue" type="color">#FF33B5E5</item>
