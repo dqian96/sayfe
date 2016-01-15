@@ -1,7 +1,15 @@
 <resources>
+    <!-- Action Bar -->
     <string name="app_name">Sayfe</string>
+    <string name="aboutMainActivity">
+At Sayfe, we aspire to educate, support and empower students to combat issues surrounding sexual assault. We educate students on the importance of consent, the availability of resources and on the seriousness of sexual assault and harassment. We support survivors of sexual assault by providing support forums and by creating a community to start a conversation. We provide reviews of available resources to empower students and return the power of choice to them.
+    </string>
+    <string name="aboutMapsActivity">
+These resources are there for people who have recently been assaulted and can help if you need immediate advice, medical attention, or crisis counselling. If you have nowhere else to turn, some of the following resources may be helpful.
+    </string>
+
     <!-- Main Activity -->
-    <string name="mainActivityTitleText">I    .  .  .</string>
+    <string name="mainActivityTitleText">I       .     .     .</string>
     <string name="mainActivityQuestionsButton">have questions</string>
     <string name="mainActivityMapButton">feel unsafe</string>
     <string name="mainActivitySupportButton">need support</string>
@@ -9,6 +17,10 @@
     <!-- Questions Activity -->
     <string name="title_question_list">Questions</string>
     <string name="title_question_detail">Question Detail</string>
+
+    <!-- Maps Activity -->
+    <string name="title_activity_maps">Find Help Near Me</string>
+
 
 
 </resources>

@@ -2,6 +2,7 @@ package ca.sayfe.sayfe;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -92,6 +93,11 @@ public class QuestionListActivity extends AppCompatActivity {
             holder.mItem = mValues.get(position);
             holder.mIdView.setText(mValues.get(position).id);
             holder.mContentView.setText(mValues.get(position).content);
+
+            //Fonts
+            Typeface font = Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf");
+            holder.mContentView.setTypeface(font);
+            holder.mIdView.setTypeface(font);
 
             holder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override

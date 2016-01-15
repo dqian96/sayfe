@@ -1,6 +1,7 @@
 package ca.sayfe.sayfe;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -62,6 +63,12 @@ public class QuestionDetailFragment extends Fragment {
         // Show the content as text in a TextView.
         if (mItem != null) {
             ((TextView) rootView.findViewById(R.id.question_detail)).setText(mItem.details);
+
+
+            //Fonts
+            Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/OpenSans-Regular.ttf");
+            ((TextView) rootView.findViewById(R.id.question_detail)).setTypeface(font);
+
         }
 
         return rootView;

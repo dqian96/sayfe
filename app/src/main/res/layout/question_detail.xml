@@ -7,4 +7,4 @@
     android:padding="16dp"
     android:textIsSelectable="true"
     tools:context="ca.sayfe.sayfe.QuestionDetailFragment"
-    android:textSize="20sp" />
+    android:textSize="15sp" />
