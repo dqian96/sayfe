@@ -27,6 +27,8 @@
         android:layout_alignRight="@+id/mainActivityQuestionsButton"
         android:layout_alignEnd="@+id/mainActivityQuestionsButton" />
 
+
+
     <Button
         android:textAllCaps="false"
         android:layout_width="wrap_content"
@@ -55,6 +57,7 @@
         android:layout_alignEnd="@+id/mainActivityQuestionsButton"
         android:textColor="@color/white" />
 
+
     <Button
         android:textAllCaps="false"
         android:layout_width="wrap_content"
@@ -70,4 +73,5 @@
         android:layout_alignEnd="@+id/mainActivityMapButton"
         android:layout_marginTop="25dp"
         android:textColor="@color/white" />
+
 </RelativeLayout>
