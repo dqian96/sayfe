@@ -5,6 +5,7 @@
     <color name="colorPrimaryDark">#00695C</color>
     <color name="colorAccent">#0288D1</color>
     <color name="strokeColor">#E0F2F1</color>
+    <color name="recordingRed">#F44336</color>
 
     <!-- Custom color definitions -->
     <item name="blue" type="color">#FF33B5E5</item>

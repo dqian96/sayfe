@@ -158,7 +158,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         //in actual implementation, there should be a help center class
         mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(43.653546, -79.398035))
+                .position(new LatLng(43.6635475, -79.384294))
                 .title("Assaulted Women's Help Line"));
 
         mMap.addMarker(new MarkerOptions()
@@ -170,7 +170,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .title("Barbra Schlifer Commemorative Clinic"));
 
         mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(43.653556, -79.398038))
+                .position(new LatLng(43.653548, -79.398037))
                 .title("Kids Help Phone"));
 
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
@@ -179,7 +179,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public boolean onMarkerClick(Marker marker) {
                 String message = "";
-                if (marker.getTitle().equals("Toronto Rape  Crisis Centre")) {
+                if (marker.getTitle().equals("Toronto Rape Crisis Centre")) {
                     message =
                             "416-597-1171 (main line), 416-597-8808 (counselling line)\n" +
                             "Offers legal support, referrals, a 24-hour crisis line, support groups and in-person counselling for victims of sexual assault.\n" +
@@ -198,7 +198,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                             "416-863-0511, toll-free in Ontario at 1-866-863-0511 , or 416-323-6040 if assaulted in last 72 hours\n" +
                                     "Call-in only.\n" +
                                     "Emergency help line for women that have been assaulted. Anonymous, accessible 24 hours a day. " +
-                                    "More information at http://www.awhl.org/.";
+                                    "More information at http://www.kidshelp.org/.";
                 }
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(MapsActivity.this);
